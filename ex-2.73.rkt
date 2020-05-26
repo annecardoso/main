@@ -127,12 +127,12 @@
 
 ; testes
 
-<<<<<<< HEAD
+
 (check-equal? (deriv '(/ x 8) 'x) '(/ 8 64))
-=======
+
 (check-equal? (deriv '(/ x 8) 'x)
               '(/ 8 64))
->>>>>>> 737d88f761c953739275572fa6362b74829a782f
+
 
 (check-equal? (deriv '(/ 8 x) 'x)
               '(/ -8 (* x x)))
@@ -167,7 +167,7 @@
 
 (put 'deriv '** deriv-exponentiation)
 
-<<<<<<< HEAD
+
 ;testes
 
 (check-equal? (deriv '(** x 0) 'x) '0)
@@ -177,7 +177,6 @@
 (check-equal? (deriv '(** (+ x 4) 5) 'x) '(* 5 (** (+ x 4) 4)))
 
 
-=======
 
 ; testes
 
@@ -189,14 +188,13 @@
 
 (check-equal? (deriv '(** (+ x 4) 5) 'x)
               '(* 5 (** (+ x 4) 4)))
->>>>>>> 737d88f761c953739275572fa6362b74829a782f
+
 
 
 ;; item D
 
 ; será nessesario alterar todos os put para que funcione.
 
-<<<<<<< HEAD
 
 
 
@@ -204,5 +202,4 @@
 
 
 
-=======
->>>>>>> 737d88f761c953739275572fa6362b74829a782f
+
